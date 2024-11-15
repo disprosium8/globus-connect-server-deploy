@@ -10,23 +10,9 @@
 # variables.
 #
 
-# $GLOBUS_CLIENT_ID = <client_id>
-# $GLOBUS_CLIENT_SECRET = <client_secret>
 # $DEPLOYMENT_KEY = <endpoint_deployment_key>
 # $NODE_SETUP_ARGS = optional args for 'node setup' (ex. --ip-address)
 # $GLOBUS_SDK_ENVIRONMENT = optional development environment
-
-if [ -z "$GLOBUS_CLIENT_ID" ]
-then
-    echo "Missing environment variable 'GLOBUS_CLIENT_ID'. Exitting."
-    exit 1
-fi
-
-if [ -z "$GLOBUS_CLIENT_SECRET" ]
-then
-    echo "Missing environment variable 'GLOBUS_CLIENT_SECRET'. Exitting."
-    exit 1
-fi
 
 if [ -z "$DEPLOYMENT_KEY" ]
 then
